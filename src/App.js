@@ -2,46 +2,73 @@ import React from 'react';
 import logo from './logo.svg';
 import CarBox from "./components/car/CarBox";
 
+
+const car = {
+    details: {
+        companyName: "kia",
+        name: "Sportage",
+        price: 120000,
+        modelYear: 2017,
+        distance: 63000,
+        gearType: 'automatic',
+        motor: 2000,
+        power: 125,
+        seatsNumber: 5,
+        previousHandsNumber: 1,
+        color: 'gray',
+    },
+    pictures: [
+        {
+            name: 'Car 1',
+            url: 'img/car 1.jpg',
+        },
+        {
+            name: 'Car 2',
+            url: 'img/car 2.jpg',
+        },
+        {
+            name: 'Car 3',
+            url: 'img/car 3.jpg',
+        },
+        {
+            name: 'Majd',
+            url: 'img/majd.png',
+        },
+    ]
+};
+
 function App() {
+
     return (
         <div className="flex flex-wrap px-4 py-12">
             <div className="p-3 w-1/3 ">
-                <CarBox/>
+                <CarBox car={car}/>
             </div>
 
-            <div className="p-3 w-1/3 ">
-                <CarBox/>
-            </div>
-
-            <div className="p-3 w-1/3 ">
-                <CarBox/>
-            </div>
-
-            <div className="p-3 w-1/3 ">
-                <CarBox/>
-            </div>   <div className="p-3 w-1/3 ">
-                <CarBox/>
-            </div>
-
-            <div className="p-3 w-1/3 ">
-                <CarBox/>
-            </div>
-
-            <div className="p-3 w-1/3 ">
-                <CarBox/>
-            </div>
-
-            <div className="p-3 w-1/3 ">
-                <CarBox/>
-            </div>
-
-
-
-            {/*<div className=" mx-4 w-1/3">*/}
-            {/*    <CarBox/>*/}
+            {/*<div className="p-3 w-1/3 ">*/}
+            {/*    <CarBox car={car}/>*/}
             {/*</div>*/}
-            {/*<div className="mx-4 w-1/3">*/}
-            {/*    <CarBox/>*/}
+
+            {/*<div className="p-3 w-1/3 ">*/}
+            {/*    <CarBox car={car}/>*/}
+            {/*</div>*/}
+
+            {/*<div className="p-3 w-1/3 ">*/}
+            {/*    <CarBox car={car}/>*/}
+            {/*</div>   <div className="p-3 w-1/3 ">*/}
+            {/*    <CarBox car={car}/>*/}
+            {/*</div>*/}
+
+            {/*<div className="p-3 w-1/3 ">*/}
+            {/*    <CarBox car={car}/>*/}
+            {/*</div>*/}
+
+            {/*<div className="p-3 w-1/3 ">*/}
+            {/*    <CarBox car={car}/>*/}
+            {/*</div>*/}
+
+            {/*<div className="p-3 w-1/3 ">*/}
+            {/*    <CarBox car={car}/>*/}
             {/*</div>*/}
 
         </div>
