@@ -6,20 +6,21 @@ import PropTypes from 'prop-types'
 const CarBox = ({car}) => {
     return (
 
-        <div className="overflow-hidden">
+        <div className="overflow-hidden ">
             <div className="relative px-6 -mb-4 z-10">
                 <span className="inline-block rounded-full p-2 right-0 text-white font-bold bg-yellow-600">
                     {car.details.modelYear}
                 </span>
             </div>
-            <div className="relative rounded-lg overflow-hidden">
-                <ImageCarousel pictures={car.pictures}/>
-            </div>
+            <div className="relative rounded-lg  overflow-hidden">
 
-            <div className="relative px-6 -mt-12">
-                <div className="relative p-6 rounded-lg bg-white shadow-xl">
+                <ImageCarousel pictures={car.pictures}/>
+
+                <div className=" p-6 bg-white shadow-xl">
                     <CarDetails carDetails={car.details}/>
-                    <a href="#" className="inline-block absolute mr-3 mb-3 bg-blue-500 text-white text-sm rounded-lg px-2 py-1 right-0 bottom-0 uppercase shadow-lg hover:border-blue-500 focus:outline-none focus:shadow-outline hover:bg-black active:bg-gray-700">full details</a>
+                    <a href="#"
+                       className="inline-block absolute mr-3 mb-3 bg-blue-500 text-white text-sm rounded-lg px-2 py-1 right-0 bottom-0 uppercase shadow-lg hover:border-blue-500 focus:outline-none focus:shadow-outline hover:bg-black active:bg-gray-700">full
+                        details</a>
                 </div>
             </div>
         </div>

@@ -39,35 +39,23 @@ const car = {
 
 function App() {
 
+    const renderCars = () => {
+
+        return Array(20).fill(car).map((item, index) => {
+                return (
+                    <div key={index} className="p-3 sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4">
+                        <CarBox car={item}/>
+                    </div>
+                )
+            }
+        );
+    }
+
     return (
         <div className="flex flex-wrap px-4 py-12">
-            <div className="p-3 w-1/3 ">
-                <CarBox car={car}/>
-            </div>
 
-            {/*<div className="p-3 w-1/3 ">*/}
-            {/*    <CarBox car={car}/>*/}
-            {/*</div>*/}
-
-            {/*<div className="p-3 w-1/3 ">*/}
-            {/*    <CarBox car={car}/>*/}
-            {/*</div>*/}
-
-            {/*<div className="p-3 w-1/3 ">*/}
-            {/*    <CarBox car={car}/>*/}
-            {/*</div>   <div className="p-3 w-1/3 ">*/}
-            {/*    <CarBox car={car}/>*/}
-            {/*</div>*/}
-
-            {/*<div className="p-3 w-1/3 ">*/}
-            {/*    <CarBox car={car}/>*/}
-            {/*</div>*/}
-
-            {/*<div className="p-3 w-1/3 ">*/}
-            {/*    <CarBox car={car}/>*/}
-            {/*</div>*/}
-
-            {/*<div className="p-3 w-1/3 ">*/}
+            {renderCars()}
+            {/*<div className="p-3 lg:w-1/3 sm:w-full">*/}
             {/*    <CarBox car={car}/>*/}
             {/*</div>*/}
 
