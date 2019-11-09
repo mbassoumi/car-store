@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types';
 
 
-const CarDetails = ({carDetails}) => {
+const CarBoxDetails = ({carDetails}) => {
     return (
         <div>
             <h1 className="uppercase leading-loose font-semibold truncate">
@@ -21,7 +21,7 @@ const CarDetails = ({carDetails}) => {
 };
 
 
-CarDetails.propTypes = {
+CarBoxDetails.propTypes = {
     carDetails: PropTypes.exact({
         companyName: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
@@ -36,4 +36,4 @@ CarDetails.propTypes = {
         color: PropTypes.string.isRequired,
     }).isRequired
 };
-export default CarDetails;
+export default CarBoxDetails;

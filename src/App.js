@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import CarBox from "./components/car/CarBox";
+import CarBox from "./components/car/card/CarBox";
 
 
 const car = {
