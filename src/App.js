@@ -1,6 +1,7 @@
 import React      from 'react';
 import Navbar     from './components/navbar/Navbar';
 import MyDropDown from './components/dropdown/MyDropDown';
+import CarPage    from './components/car/CarPage';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
             {/*    <MyDropDown/>*/}
             {/*</div>*/}
             <Navbar/>
+            <CarPage/>
         </div>
     );
 }
